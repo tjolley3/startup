@@ -14,6 +14,9 @@ So you can't find a device that you need for software testing? You don't know wh
 ### Design and Look
 
 Note: Not written up yet, still need to design what it looks like by hand
+![MicrosoftTeams-image (4)](https://github.com/tjolley3/startup/assets/144293311/f8e962fa-b846-46ea-975e-6098b70080b7)
+![MicrosoftTeams-image (5)](https://github.com/tjolley3/startup/assets/144293311/208e58e3-0dc6-4f51-8594-50040bedd52c)
+![MicrosoftTeams-image (3)](https://github.com/tjolley3/startup/assets/144293311/6460887c-e9a9-41d9-8f1a-c69690d3056f)
 
 ## Features and Intuitive Use System
 
