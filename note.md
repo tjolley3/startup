@@ -8,3 +8,5 @@ I have learned about git commit -m, using git add "filename" before it
 ## HTML Structure assignment
   - I was able to change the address and add some elements to the website that was put together
   - I added an icon, my respository, and the unique websites asked for
+## Other HTML Assignments
+  - With what I had, I mostly just updated the given code with the objects I wanted there whether it was videos, colors, audio, pictures, and so on.
