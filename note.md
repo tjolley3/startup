@@ -10,3 +10,7 @@ I have learned about git commit -m, using git add "filename" before it
   - I added an icon, my respository, and the unique websites asked for
 ## Other HTML Assignments
   - With what I had, I mostly just updated the given code with the objects I wanted there whether it was videos, colors, audio, pictures, and so on.
+## Simon-HTML Assignment startup
+  - I am looking through the info and the video, I am a bit confused on what we submit for this 100 pts, going to talk to the TA's and other class members
+      - Question--- Do I make adjustments to Simon for my own domain and such or am I creating the begins and prototype of my inventory system?
+  - Got my questions answered, it looks like we are setting up the basic elements of our project, I am way behind in that case, I don't know how I am going to finish this tonight
