@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Your Inventory System</title>
+    <style>
+        /* Style for error message */
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Links -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </nav>
+
+    <div id="github-link">
+        <a href="https://github.com/tjolley3/startup.git" target="_blank">GitHub Repository</a>
+    </div>
+
+
+ <!-- Login Section -->
+ <section id="login">
+    <h1>Login</h1>
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <br>
+        <button type="submit">Login</button>
+    </form>
+    <!-- Error message container -->
+    <div id="error-message" class="error-message"></div>
+</section>
+
+<script>
+    // JavaScript code to handle form submission and error messages
+    document.addEventListener("DOMContentLoaded", function () {
+        const loginForm = document.getElementById("login-form");
+        const errorMessage = document.getElementById("error-message");
+
+        loginForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get input values
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Validate the login (you can replace this with your actual validation logic)
+            if (username === "your_username" && password === "your_password") {
+                // Redirect to another page upon successful login (replace with your desired page)
+                window.location.href = "dashboard.html";
+            } else {
+                // Display an error message if login fails
+                errorMessage.textContent = "Incorrect username or password. Please try again.";
+                // ::::::NOTE!!!:::::: This system is based upon one my boss is asking me to recreate and authorized me to do it as my homework for school. Once the class is passed, the overall code of this
+                // Inventory system will have to be approved by my boss if it gets used at all, necessary changes will be made as this is currently my property, my code. Any unauthorized use is prohibited!
+                // This includes my employer and BYU, as this is NOT property of anyone else, but myself
+            }
+        });
+    });
+</script>
+</body>
+</html>
