@@ -18,8 +18,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    function frontendServiceCall(){
+
+
+    }
+
+    function backendServiceCall(){
+
+
+    }
+
     // Check login status when the page loads
     checkLoginStatus();
+    frontendServiceCall();
+    backendServiceCall();
 
     loginForm.addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent form submission
