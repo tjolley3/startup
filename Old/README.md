@@ -68,3 +68,10 @@ I want to make it usable, not over the top, and also potentially include picture
 
 Make it accessible to any user that is required and needs to use it
 
+## Service
+
+Added Service part and commmitting changes
+Added and fixed my code
+Added JS files
+Added Footer on each HTML page
+
