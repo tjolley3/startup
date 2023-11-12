@@ -19,11 +19,33 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function frontendServiceCall(){
+        fetch('https://api.quotable.io/random')
+        .then((response) => response.json())
+        .then((data) => {
+        console.log("callFromFrontend", data)
+        const quote1div = document.getElementById("quote1");
+        const para = document.createElement("p");
+        const node = document.createTextNode(data.content);
+        para.appendChild(node);
+        quote1div.appendChild(para);
+
+        });
 
 
     }
 
     function backendServiceCall(){
+        fetch('/api/v1/random-quote')
+        .then((response) => response.json())
+        .then((data) => {
+        console.log("callFromBackend", data)
+        const quote2div = document.getElementById("quote2");
+        const para = document.createElement("p");
+        const node = document.createTextNode(data.content);
+        para.appendChild(node);
+        quote2div.appendChild(para);
+      
+        });
 
 
     }
