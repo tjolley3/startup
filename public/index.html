@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Inventory System - Home</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Golden Inventory System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Inventory.html">Inventory</a></li>
+                <li><a href="User Settings.html">Settings</a></li>
+                <li><a href="device_details.html">Device Details</a></li>
+                <li id="login-logout"><a href="#" id="login-logout-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- GitHub Link -->
+    <div id="github-link">
+        <a href="https://github.com/tjolley3/startup.git" target="_blank">GitHub Repository</a>
+    </div>
+
+    <!-- Login Section -->
+    <section id="login">
+        <div class="login-container">
+            <h2 class="login-title">Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <!-- Error message container -->
+            <div id="error-message" class="error-message"></div>
+        </div>
+    </section>
+
+    <!-- Include the JavaScript file -->
+    <script src="/js/index.js"></script>
+</body>
+</html>
