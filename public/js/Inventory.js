@@ -16,16 +16,20 @@ document.addEventListener("DOMContentLoaded", function () {
         logoutLink.style.display = "inline";
 
         // Add a click event listener to the logout link
-        logoutLink.addEventListener("click", function (event) {
-            event.preventDefault();
-            // Remove the login status and username from sessionStorage
-            sessionStorage.removeItem("isLoggedIn");
-            sessionStorage.removeItem("loggedInUser");
-            // Redirect to the home page (index.html)
-            window.location.href = "index.html";
-        });
+        logoutLink.addEventListener("click", logout);
     } else {
         // If not logged in, redirect to the login page
         window.location.href = "index.html";
     }
+
+
+    function logout(event) {
+        event.preventDefault();
+        sessionStorage.removeItem('isLoggedIn');
+        sessionStorage.removeItem('loggedInUser');
+        fetch(`/api/v1/user/logout`, {
+          method: 'delete',
+        }).then(() => (window.location.href = '/'));
+      }
+
 });

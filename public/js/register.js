@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const loginForm = document.getElementById("login-form");
+    const signupForm = document.getElementById("signup-form");
     const errorMessage = document.getElementById("error-message");
     const loginLogoutLink = document.getElementById("login-logout-link");
 
@@ -66,19 +66,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+
+
     // Check login status when the page loads
     checkLoginStatus();
     frontendServiceCall();
     backendServiceCall();
     
-
-    loginForm.addEventListener("submit", async function (event) {
+    async function createUser(event) {
         event.preventDefault(); // Prevent form submission
 
         // Get input values
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
-        let response = await fetch("/api/v1/user/login", {
+        let response = await fetch("/api/v1/user/create", {
             method: 'post',
             body: JSON.stringify({ email: username, password: password }),
             headers: {
@@ -96,21 +97,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
           }
 
+    }
+
+    signupForm.addEventListener("submit", createUser);
 
 
-
-
-
-
-
-          
-        // Replace this with your actual validation logic
-        // if (username === "your_username" && password === "your_password") {
-        //     // Set login status in sessionStorage
-        //     sessionStorage.setItem("isLoggedIn", "true");
-        //     checkLoginStatus();
-        // } else {
-        //     errorMessage.textContent = "Incorrect username or password. Please try again.";
-        // }
-    });
 });
