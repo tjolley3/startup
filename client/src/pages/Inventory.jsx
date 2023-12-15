@@ -1,0 +1,60 @@
+import React from 'react';
+import './Inventory.css'; // Import your CSS file
+
+function Inventory() {
+  return (
+    <div>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Inventory.html">Inventory</a></li>
+            <li><a href="User Settings.html">Settings</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      {/* User Info and Logout */}
+      <div id="user-info">
+        Logged in as: <span id="username">[Username]</span> (<a href="#" id="logout-link">Logout</a>)
+      </div>
+
+      {/* Inventory Content */}
+      <section id="inventory">
+        <h1>Inventory</h1>
+        
+        {/* Device List */}
+        <ul id="device-list">
+          <li>
+            <a href="device_details.html?device=Device1&make=Make1&model=Model1&serial=Serial1">
+              <h2>Device 1</h2>
+              <img src="https://www.zebra.com/content/dam/zebra_dam/global/zcom-web-production/web-production-photography/product-cards/series/mc9300-series-1x1.jpg" alt="Device 1" />
+            </a>
+          </li>
+          <li>
+            <a href="device_details.html?device=Device2&make=Make2&model=Model2&serial=Serial2">
+              <h2>Device 2</h2>
+              <img src="https://az417327.vo.msecnd.net/content/images/cache/mc9200-large_800_700.png" alt="Device 2" />
+            </a>
+          </li>
+          <li>
+            <a href="device_details.html?device=Device3&make=Make3&model=Model3&serial=Serial3">
+              <h2>Device 3</h2>
+              <img src="https://webobjects2.cdw.com/is/image/CDW/6393287?$product-detail$" alt="Device 3" />
+            </a>
+          </li>
+        </ul>
+
+        {/* WebSocket data for real-time updates */}
+        <div id="websocket-data">
+          {/* Real-time device status updates go here */}
+        </div>
+      </section>
+      <footer>
+        Copyright Taylor
+      </footer>
+    </div>
+  );
+}
+
+export default Inventory;
